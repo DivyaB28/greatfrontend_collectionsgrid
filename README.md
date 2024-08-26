@@ -10,5 +10,5 @@ You will be provided with data pertaining to 3 featured collections to display i
 
 ### References
 
-- (Grid MDN)[https://developer.mozilla.org/en-US/docs/Glossary/Grid]
-- (Fixing Race Conditions in React with useEffect)[https://maxrozen.com/race-conditions-fetching-data-react-with-useeffect]
+- [Grid MDN](https://developer.mozilla.org/en-US/docs/Glossary/Grid)
+- [Fixing Race Conditions in React with useEffect](https://maxrozen.com/race-conditions-fetching-data-react-with-useeffect)

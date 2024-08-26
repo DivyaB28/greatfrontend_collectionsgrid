@@ -1,0 +1,120 @@
+h1 {
+  color: #000000;
+  margin: 0;
+  font-weight: 500;
+  font-size: 30px;
+}
+.container {
+  position: relative;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+  padding: 2.6rem 1rem 1rem 1rem;
+}
+
+h3,
+p {
+  margin: 0;
+  color: #ffffff;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 14px;
+}
+p {
+  font-size: 18px;
+  font-weight: 400;
+}
+.product_wrapper {
+  display: grid;
+  gap: 2rem;
+  color: #ffffff;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr repeat(2, 20rem);
+  margin-top: 1.8rem;
+}
+
+.product {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  transition: background-size 2s ease-in;
+}
+.product:hover,
+.product:focus {
+  background-size: 46rem;
+}
+.product:nth-child(1) {
+  background-size: 45rem;
+  min-height: 36rem;
+  background-image: url("https://vaqybtnqyonvlwtskzmv.supabase.co/storage/v1/object/public/e-commerce-track-images/collections/cozy-comfort.jpg");
+}
+.product:nth-child(2) {
+  background-size: 43rem;
+  background-image: url("https://vaqybtnqyonvlwtskzmv.supabase.co/storage/v1/object/public/e-commerce-track-images/collections/urban-oasis.jpg");
+}
+.product:nth-child(3) {
+  background-size: 43rem;
+  background-image: url("https://vaqybtnqyonvlwtskzmv.supabase.co/storage/v1/object/public/e-commerce-track-images/collections/fresh-fusion.jpg");
+}
+.description {
+  padding: 18.5px;
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    padding: 2.8rem 6rem;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  h3 {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  main {
+    margin-top: 1.2rem;
+  }
+  .product {
+    background-size: cover;
+  }
+  .product_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .product:nth-child(1) {
+    grid-row: 1 / span 2;
+    min-width: 15rem;
+    min-height: 37rem;
+  }
+
+  .product:nth-child(2) {
+    grid-row: 1 / span 1;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px) {
+  .container {
+    padding: 10.6rem 1rem;
+  }
+  .product_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .product:nth-child(1) {
+    grid-row: 1 / span 2;
+  }
+}
