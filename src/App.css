@@ -64,19 +64,19 @@ p {
 }
 
 .product:nth-child(1) {
-  min-height: 35.5rem;
+  min-height: 36.3rem;
   background-position-y: 20%;
   background-image: url("https://vaqybtnqyonvlwtskzmv.supabase.co/storage/v1/object/public/e-commerce-track-images/collections/cozy-comfort.jpg");
 }
 .product:nth-child(2) {
   background-size: 43rem;
-  min-height: 20.5rem;
+  min-height: 20.9rem;
   background-image: url("https://vaqybtnqyonvlwtskzmv.supabase.co/storage/v1/object/public/e-commerce-track-images/collections/urban-oasis.jpg");
 }
 .product:nth-child(3) {
   background-size: 43rem;
   background-position-y: -345px;
-  min-height: 20.5rem;
+  min-height: 21.6rem;
   background-image: url("https://vaqybtnqyonvlwtskzmv.supabase.co/storage/v1/object/public/e-commerce-track-images/collections/fresh-fusion.jpg");
 }
 .description {
@@ -140,5 +140,9 @@ p {
   }
   .product:nth-child(1) {
     grid-row: 1 / span 2;
+  }
+  .product:nth-child(2),
+  .product:nth-child(3) {
+    min-height: 17rem;
   }
 }
