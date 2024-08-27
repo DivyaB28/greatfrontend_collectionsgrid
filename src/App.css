@@ -11,7 +11,8 @@ h1 {
   flex-direction: column;
   justify-content: center;
   background: #ffffff;
-  padding: 2.6rem 1rem 1rem 1rem;
+  padding: 2.6rem 1rem;
+  border-radius: 10px;
 }
 
 h3,
@@ -46,32 +47,40 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  transition: background-size 2s ease-in;
+  /* transition: background-size 2s ease-in; */
+  filter: brightness(0.8);
+  backdrop-filter: none;
+  /* background-size: cover; */
 }
+
 .product:hover,
 .product:focus {
   background-size: 46rem;
 }
+
 .product:nth-child(1) {
-  background-size: 45rem;
-  min-height: 36rem;
+  min-height: 35.5rem;
+  background-position-y: 20%;
   background-image: url("https://vaqybtnqyonvlwtskzmv.supabase.co/storage/v1/object/public/e-commerce-track-images/collections/cozy-comfort.jpg");
 }
 .product:nth-child(2) {
   background-size: 43rem;
+  min-height: 20.5rem;
   background-image: url("https://vaqybtnqyonvlwtskzmv.supabase.co/storage/v1/object/public/e-commerce-track-images/collections/urban-oasis.jpg");
 }
 .product:nth-child(3) {
   background-size: 43rem;
+  background-position-y: -345px;
+  min-height: 20.5rem;
   background-image: url("https://vaqybtnqyonvlwtskzmv.supabase.co/storage/v1/object/public/e-commerce-track-images/collections/fresh-fusion.jpg");
 }
 .description {
-  padding: 18.5px;
+  padding: 17px;
 }
 
 @media screen and (min-width: 800px) {
   .container {
-    padding: 2.8rem 6rem;
+    padding: 5.8rem 6.4rem;
   }
   h1 {
     font-size: 30px;
@@ -88,21 +97,29 @@ p {
   main {
     margin-top: 1.2rem;
   }
-  .product {
+  /* .product {
     background-size: cover;
-  }
+  } */
   .product_wrapper {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
+    margin-top: 0.3rem;
   }
   .product:nth-child(1) {
+    background-size: cover;
+    background-position-y: 10%;
     grid-row: 1 / span 2;
-    min-width: 15rem;
-    min-height: 37rem;
   }
 
   .product:nth-child(2) {
+    background-size: 38.5rem;
+    background-position-y: 39%;
     grid-row: 1 / span 1;
+  }
+
+  .product:nth-child(3) {
+    background-size: 38rem;
+    background-position-y: 48%;
   }
 }
 
