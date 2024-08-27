@@ -13,6 +13,7 @@ h1 {
   background: #ffffff;
   padding: 2.6rem 1rem;
   border-radius: 10px;
+  box-shadow: 0 2px 4px -1px rgb(0 0 0/ 0.06), 0 4px 6px -1px rgb(0 0 0/ 0.1);
 }
 
 h3,
@@ -44,18 +45,22 @@ p {
   background-repeat: no-repeat;
   object-fit: contain;
   border-radius: 10px;
+
   display: flex;
   flex-direction: column;
   justify-content: end;
   /* transition: background-size 2s ease-in; */
   filter: brightness(0.8);
   backdrop-filter: none;
+  transition: filter 0.4s ease-in-out, scale 0.4s;
   /* background-size: cover; */
 }
 
 .product:hover,
 .product:focus {
-  background-size: 46rem;
+  cursor: pointer;
+  filter: brightness(0.7);
+  scale: 1.05;
 }
 
 .product:nth-child(1) {
@@ -80,7 +85,7 @@ p {
 
 @media screen and (min-width: 800px) {
   .container {
-    padding: 5.8rem 6.4rem;
+    padding: 6.3rem;
   }
   h1 {
     font-size: 30px;
@@ -115,11 +120,13 @@ p {
     background-size: 38.5rem;
     background-position-y: 39%;
     grid-row: 1 / span 1;
+    min-height: 17rem;
   }
 
   .product:nth-child(3) {
     background-size: 38rem;
     background-position-y: 48%;
+    min-height: 17rem;
   }
 }
 
